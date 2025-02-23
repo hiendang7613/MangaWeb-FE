@@ -1,0 +1,23 @@
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -13px; /* Adjust this value to move the line closer or further away from the text */
+  height: 3px; /* Line thickness */
+  background-color: transparent; /* Initial state */
+  transition: background-color 0.2s ease;
+  border-radius: 2px; /* Adjust this value for smoothness */
+}
+
+.nav-link:hover::after {
+  background-color: black; /* Line color on hover */
+}
+
+.main-navbar{
+  z-index: 1000;
+}

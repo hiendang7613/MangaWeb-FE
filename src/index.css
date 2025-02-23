@@ -1,0 +1,205 @@
+.tensorsite__background {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+    ),
+    url(https://www.tensorflow.org/site-assets/images/marketing/hero-river-bg-right.svg);
+  background-repeat: no-repeat;
+  background-size: cover; /* Change from 'contain' to 'cover' */
+}
+.tensorsite__background2 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(255, 255, 255, 1) 100%
+    ),
+    url(https://www.tensorflow.org/site-assets/images/marketing/why/whytf-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover; /* Change from 'contain' to 'cover' */
+}
+.tensorsite__background22 {
+  background-image: url(https://www.tensorflow.org/site-assets/images/marketing/home/hero/tf-hero-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover; /* Change from 'contain' to 'cover' */
+  width: 100%;
+}
+.aiocean__background {
+  background-image: url(https://www.tensorflow.org/site-assets/images/marketing/hero-river-bg-left-large.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: -500px;
+  top: -100px;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.notebook-content {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.notebook-content h1, .notebook-content h2, .notebook-content h3 {
+  color: #333;
+}
+
+.notebook-content pre {
+  background-color: #eee;
+  border-radius: 4px;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.figcaption {
+  font-size: 16px;
+  margin: 0 0 7px !important;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+}
+
+.chapcaption {
+  /* margin-bottom: 6px; */
+  font-size: 13px;
+  color: #000;
+  line-height: 20px;
+
+}
+
+.div-caption {
+  margin-bottom: 2px;
+}
+
+.image-box {
+  position: relative;
+  height: 220px;
+  width: 100%;
+  line-height: 200px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: #000 0 0 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.chap-time {
+  color: silver;
+  font-size: 11px;
+  line-height: 20px;
+  font-style: italic;
+  float: right;
+  max-width: 47%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 2px;
+  margin-right: 10px;
+}
+
+.image-box-stat {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 12px;
+  display: block;
+  color: #fff;
+  background-color: #000;
+  opacity: .65;
+  filter: alpha(opacity = 50);
+}
+
+.image-box-icon {
+  margin-left: 6px;
+}
+
+.txt-rank {
+  color: #3498db !important;
+  font-size: 20px;
+  float: left;
+  width: 28px;
+  line-height: 45px;
+  text-align: left;
+  display: block;
+}
+
+.txt-rank-cap {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+
+.txt-rank-chapter {
+  font-size: 13px;
+  color: #000;
+}
+.txt-rank-view {
+  display: block;
+  font-style: italic;
+  font-size: 12px;
+  color: #666;
+  float: right;
+  margin-top: 3px;
+
+}
+.img-rank-box {
+  width: 55px;
+  height: 45px;
+}
+
+
+.rank-box {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+
+
+.footer-content {
+  background-color: #222;
+  color: #aaa;
+  font-size: 13px;
+
+}
+
+
+.main-content {
+  background-color: #f9f9f9;
+  font-size: 13px;
+}
+
+.body-class {
+  color: #333;
+  font-size: 13px;
+}
+
+.main-block{
+  background-color: white;
+  max-width:1030px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-bg{
+  background: url('navbar.png') repeat-x;
+  background-size: contain;
+}
+
+.search-ico{
+  float: right;
+  margin-right: 100px;
+  padding-right: 100px;
+}
+
+
