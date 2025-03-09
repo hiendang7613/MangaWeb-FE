@@ -41,8 +41,7 @@ const Footer: React.FC = () => {
                 className="h-10 w-10 mb-4"
               />
               <p className="text-gray-600">
-                Ca voi Turing là blog lập trình cá nhân của 1 HCMUS-ER
-                mong mọi người ủng hộ.
+                Website truyen...
               </p>
               <div className="flex mt-4">
                 <a href="#" className="text-gray-600 mx-2">
@@ -70,12 +69,12 @@ const Footer: React.FC = () => {
             <div>
               <h3 className="text-lg font-bold mb-4">Thông tin</h3>
               <ul>
-                <li className="text-gray-600 mb-2">Về Cá voi Turing</li>
+                <li className="text-gray-600 mb-2">Về ...</li>
               </ul>
             </div>
           </div>
           <div className="text-center text-gray-600 mt-6">
-            <p>Cung cấp bởi CavoiTurning 2024.</p>
+            <p>Cung cấp bởi ....</p>
           </div>
         </div>
       </footer>

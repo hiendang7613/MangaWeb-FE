@@ -1,50 +1,93 @@
-import React from "react";
 // import { Card, CardContent } from "@/components/ui/card";
 // import { Button } from "@/components/ui/button";
 // import { Input } from "@/components/ui/input";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useParams } from "react-router-dom";
+// import React from 'react';
+// import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+// <Slider {...settings}>
+//         {slides.map((slide, index) => (
+//           <div key={index} className="slide-item">
+//             <a href={slide.link}>
+//               <img src={slide.image} alt={slide.title} />
+//             </a>
+//             <div className="slide-caption">
+//               <h3>
+//                 <a href={slide.link}>{slide.title}</a>
+//               </h3>
+//               <a href={`${slide.link}/chuong-510`}>{slide.chapter}</a>
+//               <span className="time">
+//                 <i className="fa fa-clock-o"></i> {slide.time}
+//               </span>
+//             </div>
+//           </div>
+//         ))}
+//       </Slider>
 
 function Home() {
   const params = useParams();
+  const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    };
+
   const slides = [
     {
-      id: 1,
-      img: "a.png",
-      alt: "Slide 1",
+      title: 'Ta Có 90 Tỷ Tiền Liếm Cẩu!',
+      image: '/Users/apple/mangaweb/mangaweb1/public/a.png',
+      link: 'https://nettruyenvie.com/truyen-tranh/ta-co-90-ty-tien-liem-cau',
+      chapter: 'Chapter 510',
+      time: '1 ngày trước',
     },
     {
-      id: 2,
-      img: "a.png",
-      alt: "Slide 2",
+      title: 'Ngủ Say Vạn Cổ: Xuất Thế Quét Ngang Chư Thiên',
+      image: 'https://image1.kcgsbok.com/nettruyen/thumb/ngu-say-van-co-xuat-the-quet-ngang-chu-thien.jpg',
+      link: 'https://nettruyenvie.com/truyen-tranh/ngu-say-van-co-xuat-the-quet-ngang-chu-thien',
+      chapter: 'Chapter 90',
+      time: '4 ngày trước',
     },
-    {
-      id: 3,
-      img: "a.png",
-      alt: "Slide 3",
-    },
+    // Add more slides as needed
   ];
-
+  
   return (
     <main className="">
       <div className="mb-4">
-        <Swiper
-          spaceBetween={30}
-          slidesPerView={1}
-          loop={true}
-          pagination={{ clickable: true }}
-          autoplay={{ delay: 3000 }}
-        >
-          {slides.map((slide) => (
-            <SwiperSlide key={slide.id}>
-              <img
-                src={slide.img}
-                alt={slide.alt}
-                className="w-full h-[200px] object-cover"
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+      <div className="slider-container">
+      
+    </div>
       </div>
       <div className="main-content justify-center">
         <div className=" flex flex-wrap -mx-2 p-8 justify-center main-block">
@@ -68,7 +111,7 @@ function Home() {
                     </div>
                   </div>
                   <h3 className="figcaption">
-                    Thưa Ngài, Tôi Cảm Thấy Khó Chịu
+                    Thế Giới Của Game Otome Thật Khó Khăn Cho Những Thường Dân
                   </h3>
                   <div className="div-caption">
                     <a className="chapcaption">Chapter 572</a>{" "}
@@ -93,7 +136,7 @@ function Home() {
                     />
                   </div>
                   <h3 className="figcaption">
-                    Thưa Ngài, Tôi Cảm Thấy Khó Chịu
+                    Thế Giới Của Game Otome Thật Khó Khăn Cho Những Thường Dân
                   </h3>
                   <div className="div-caption">
                     <a className="chapcaption">Chapter 572</a>{" "}
@@ -118,7 +161,7 @@ function Home() {
                     />
                   </div>
                   <h3 className="figcaption">
-                    Thưa Ngài, Tôi Cảm Thấy Khó Chịu
+                    Thế Giới Của Game Otome Thật Khó Khăn Cho Những Thường Dân
                   </h3>
                   <div className="div-caption">
                     <a className="chapcaption">Chapter 572</a>{" "}
@@ -143,7 +186,7 @@ function Home() {
                     />
                   </div>
                   <h3 className="figcaption">
-                    Thưa Ngài, Tôi Cảm Thấy Khó Chịu
+                    Thế Giới Của Game Otome Thật Khó Khăn Cho Những Thường Dân
                   </h3>
                   <div className="div-caption">
                     <a className="chapcaption">Chapter 572</a>{" "}
@@ -174,7 +217,7 @@ function Home() {
                     />
                   </div>
                   <h3 className="figcaption">
-                    Thưa Ngài, Tôi Cảm Thấy Khó Chịu
+                    Thế Giới Của Game Otome Thật Khó Khăn Cho Những Thường Dân
                   </h3>
                   <div className="div-caption">
                     <a className="chapcaption">Chapter 572</a>{" "}
@@ -198,7 +241,7 @@ function Home() {
                     />
                   </div>
                   <h3 className="figcaption">
-                    Thưa Ngài, Tôi Cảm Thấy Khó Chịu
+                    Thế Giới Của Game Otome Thật Khó Khăn Cho Những Thường Dân
                   </h3>
                   <div className="div-caption">
                     <a className="chapcaption">Chapter 572</a>{" "}
@@ -222,7 +265,7 @@ function Home() {
                     />
                   </div>
                   <h3 className="figcaption">
-                    Thưa Ngài, Tôi Cảm Thấy Khó Chịu
+                    Thế Giới Của Game Otome Thật Khó Khăn Cho Những Thường Dân
                   </h3>
                   <div className="div-caption">
                     <a className="chapcaption">Chapter 572</a>{" "}
@@ -246,7 +289,7 @@ function Home() {
                     />
                   </div>
                   <h3 className="figcaption">
-                    Thưa Ngài, Tôi Cảm Thấy Khó Chịu
+                    Thế Giới Của Game Otome Thật Khó Khăn Cho Những Thường Dân
                   </h3>
                   <div className="div-caption">
                     <a className="chapcaption">Chapter 572</a>{" "}
